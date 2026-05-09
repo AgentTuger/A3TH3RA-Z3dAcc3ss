@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AETHERA – TOP SECRET ARCHIVES</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #000;
+      color: #00ff88;
+      font-family: "Courier New", monospace;
+      background-image: radial-gradient(circle at top, rgba(0,255,136,0.08), transparent 60%);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px 30px;
+      border-bottom: 1px solid rgba(0,255,136,0.2);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      letter-spacing: 4px;
+      text-shadow: 0 0 15px rgba(0,255,136,0.7);
+      margin-bottom: 15px;
+    }
+
+    header p {
+      color: #8affc1;
+      font-size: 1rem;
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1400px;
+      margin: 50px auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 35px;
+    }
+
+    .card {
+      position: relative;
+      background: rgba(0, 20, 10, 0.9);
+      border: 1px solid rgba(0,255,136,0.25);
+      border-radius: 18px;
+      padding: 30px;
+      transition: 0.35s ease;
+      overflow: hidden;
+      box-shadow: 0 0 15px rgba(0,255,136,0.08);
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      border-color: #00ff88;
+      box-shadow: 0 0 25px rgba(0,255,136,0.35);
+    }
+
+    .card::before {
+      content: "CLASSIFIED";
+      position: absolute;
+      top: 12px;
+      right: -35px;
+      transform: rotate(35deg);
+      background: rgba(0,255,136,0.12);
+      color: #00ff88;
+      padding: 6px 50px;
+      font-size: 0.7rem;
+      letter-spacing: 2px;
+      border: 1px solid rgba(0,255,136,0.2);
+    }
+
+    .card h2 {
+      font-size: 1.4rem;
+      margin-bottom: 18px;
+      line-height: 1.4;
+      text-shadow: 0 0 10px rgba(0,255,136,0.4);
+    }
+
+    .card p {
+      color: #b6ffd9;
+      line-height: 1.7;
+      margin-bottom: 25px;
+      font-size: 0.95rem;
+    }
+
+    .card a {
+      display: inline-block;
+      text-decoration: none;
+      color: #000;
+      background: #00ff88;
+      padding: 12px 20px;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .card a:hover {
+      background: #8affc1;
+      transform: scale(1.04);
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px 60px;
+      color: #6affb1;
+      border-top: 1px solid rgba(0,255,136,0.15);
+      margin-top: 40px;
+    }
+
+    .logo {
+      margin-top: 25px;
+    }
+
+    .logo img {
+      opacity: 0.9;
+      filter: drop-shadow(0 0 10px rgba(0,255,136,0.5));
+    }
+
+    @media(max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .card {
+        padding: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>AETHERA – TOP SECRET</h1>
+  <p>
+    Archives numériques dédiées aux phénomènes aérospatiaux non identifiés, aux dossiers historiques,
+    aux enquêtes officielles et aux analyses documentaires du projet AETHERA.
+  </p>
+</header>
+
+<section class="container">
+
+  <div class="card">
+    <h2>📂 Rapports GEIPAN Classe D</h2>
+    <p>
+      Accès aux dossiers français classés PAN D par le GEIPAN : cas non expliqués malgré les données disponibles,
+      observations radar, témoignages multiples et événements historiques marquants.
+    </p>
+    <a href="geipan.html">Accéder aux archives</a>
+  </div>
+
+  <div class="card">
+    <h2>📂 Dossiers Déclassifiés</h2>
+    <p>
+      Base documentaire regroupant les fichiers UAP/UFO déclassifiés : Pentagone, AARO, archives militaires,
+      rapports officiels, vidéos infrarouges et documents gouvernementaux.
+    </p>
+    <a href="declassified.html">Voir les dossiers</a>
+  </div>
+
+  <div class="card">
+    <h2>📂 Cas Inexpliqués Mondiaux</h2>
+    <p>
+      Compilation internationale de cas inexpliqués : rencontres aériennes, phénomènes lumineux,
+      incidents militaires, objets non identifiés et archives historiques analysées par AETHERA.
+    </p>
+    <a href="worldcases.html">Explorer les cas</a>
+  </div>
+
+  <div class="card">
+    <h2>📂 Archives des Résumés X-Files</h2>
+    <p>
+      Base d’archives consacrée aux résumés détaillés des épisodes de X-Files,
+      avec analyses, références culturelles, inspirations réelles et éléments mythologiques.
+    </p>
+    <a href="xfiles.html">Ouvrir les archives</a>
+  </div>
+
+</section>
+
+<footer>
+  <p>
+    BUREAU AETHERA – ARCHIVES NUMÉRIQUES CLASSIFIÉES
+  </p>
+
+  <div class="logo">
+    <img src="logo-aethera.png" alt="Logo AETHERA" width="120">
+  </div>
+</footer>
+
+</body>
+</html>
