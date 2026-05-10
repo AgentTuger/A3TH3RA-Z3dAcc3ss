@@ -1,39 +1,108 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<title>GEIPAN Archives</title>
+  <meta charset="UTF-8">
+  <title>AETHERA – Archives GEIPAN</title>
+  <style>
+    body {
+      margin: 0;
+      background: #000;
+      color: #00ff88;
+      font-family: "Courier New", monospace;
+      padding: 40px;
+    }
 
-<style>
-body{
-    background:#000;
-    color:#00ff88;
-    font-family:Courier New;
-    padding:40px;
-}
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      border: 1px solid #00ff88;
+      padding: 35px;
+      background: rgba(0, 20, 10, 0.75);
+      box-shadow: 0 0 25px rgba(0, 255, 136, 0.25);
+    }
 
-a{
-    color:#00ff88;
-    display:block;
-    margin:15px 0;
-    text-decoration:none;
-}
+    h1 {
+      text-align: center;
+      letter-spacing: 4px;
+      color: #f5d27a;
+      text-shadow: 0 0 12px rgba(245, 210, 122, 0.6);
+    }
 
-a:hover{
-    color:#fff;
-}
-</style>
+    .classification {
+      text-align: center;
+      color: #ffcc66;
+      letter-spacing: 3px;
+      margin-bottom: 30px;
+    }
+
+    .intro {
+      text-align: center;
+      line-height: 1.6;
+      margin-bottom: 35px;
+    }
+
+    .archive-link {
+      display: block;
+      border: 1px solid #00ff88;
+      padding: 18px;
+      margin: 15px 0;
+      color: #00ff88;
+      text-decoration: none;
+      background: rgba(0, 0, 0, 0.45);
+      transition: 0.25s;
+    }
+
+    .archive-link:hover {
+      background: #00ff88;
+      color: #000;
+      box-shadow: 0 0 18px rgba(0, 255, 136, 0.6);
+    }
+
+    .back {
+      display: inline-block;
+      margin-top: 30px;
+      color: #ffcc66;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 35px;
+      font-size: 0.8rem;
+      color: rgba(0,255,136,0.7);
+    }
+  </style>
 </head>
 
 <body>
+  <div class="container">
+    <div class="classification">AETHERA — TOP SECRET ARCHIVES</div>
 
-<h1>GEIPAN ARCHIVES</h1>
+    <h1>ARCHIVES GEIPAN</h1>
 
-<p>Base documentaire française des phénomènes aérospatiaux non identifiés.</p>
+    <p class="intro">
+      Section dédiée aux dossiers français liés aux phénomènes aérospatiaux non identifiés.
+      <br>
+      Documents, analyses, rapports et cas classés par source ou par événement.
+    </p>
 
-<a href="trans-en-provence.html">
-DOSSIER — TRANS-EN-PROVENCE
-</a>
+    <a class="archive-link" href="trans-en-provence.html">
+      DOSSIER — TRANS-EN-PROVENCE
+    </a>
 
+    <a class="archive-link" href="documents/">
+      DOCUMENTS GEIPAN
+    </a>
+
+    <a class="archive-link" href="analyses/">
+      ANALYSES AETHERA
+    </a>
+
+    <a class="back" href="../index.html">← Retour au hub TOP SECRET</a>
+
+    <footer>
+      PROJET ZED — NIVEAU DE SÉCURITÉ : CLASSIFIED
+    </footer>
+  </div>
 </body>
 </html>
